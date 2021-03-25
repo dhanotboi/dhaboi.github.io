@@ -63,7 +63,7 @@ a{
   left: 0;
   background-color: #23272A;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 180px;
 }
 
 .sidenav a {
@@ -76,6 +76,9 @@ a{
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+.sidenav a:active{
+  color: #f1f1f1
 }
 
 .main {
