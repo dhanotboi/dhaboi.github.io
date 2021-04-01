@@ -5,7 +5,7 @@ body {
 h1.header {
   color: #FFFFFF;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 250%;
+  font-size: 300%;
 }
 p.normal {
   color: #FFFFFF;
@@ -40,9 +40,6 @@ li.list{
 img.padded{
   padding: 30px;
 }
-div.movielist{
-
-}
 a{
   color: #7289DA;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -50,13 +47,13 @@ a{
   text-indent: 20px;
 }
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 10px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 .sidenav {
   height: 100%;
-  width: 130px;
+  width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -65,7 +62,6 @@ a{
   overflow-x: hidden;
   padding-top: 180px;
 }
-
 .sidenav a {
   padding: 6px 6px 6px 1px;
   text-decoration: none;
@@ -80,14 +76,28 @@ a{
 .sidenav a:active{
   color: #f1f1f1
 }
-
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  text-align: left;
+  font-size: 20px;
+  background-color: #23272A;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
 .main {
-  margin-left: 130px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
+/*Adjusted for small screens*/
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
