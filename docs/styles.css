@@ -53,7 +53,7 @@ a{
 }
 .sidenav {
   height: 100%;
-  width: 0px;
+  width: 220px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -63,7 +63,8 @@ a{
   padding-top: 180px;
 }
 .sidenav a {
-  padding: 6px 6px 5px 1px;
+  text-align: left;
+  padding: 5px 0px 5px 10px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -82,14 +83,6 @@ a{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-.openbtn {
-  text-align: left;
-  font-size: 20px;
-  background-color: #23272A;
-  color: white;
-  padding: 10px 15px;
-  border: none;
 }
 .main {
   transition: margin-left .5s;
