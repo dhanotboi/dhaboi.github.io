@@ -4,36 +4,36 @@ body {
 }
 h1.header {
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 300%;
 }
 p.normal {
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 100%;
   text-indent: 20px;
 }
 h2.header {
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 200%;
   text-indent: 20px;
 }
 h3.header {
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 150%;
   text-indent: 20px;
 }
 ul.list{
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 100%;
   text-indent: 20px;
 }
 li.list{
   color: #FFFFFF;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 100%;
   text-indent: 20px;
 }
@@ -42,25 +42,25 @@ img.padded{
 }
 a{
   color: #7289DA;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: 100%;
   text-indent: 20px;
 }
 .main {
-  margin-left: 10px; /* Same as the width of the sidenav */
+  margin-left: 75px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 .sidenav {
   height: 100%;
-  width: 55px;
+  width: 65px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #23272A;
   overflow-x: hidden;
-  padding-top: 180px;
+  padding-top: 160px;
 }
 .sidenav a {
   text-align: left;
@@ -82,9 +82,6 @@ a{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-.invisible{
-  display : none;
 }
 .main {
   transition: margin-left .5s;
