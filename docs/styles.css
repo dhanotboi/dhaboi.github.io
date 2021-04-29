@@ -53,21 +53,20 @@ a{
 }
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 75px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
+  padding-top: 50px;
   background-color: #23272A;
   overflow-x: hidden;
-  padding-top: 160px;
 }
 .sidenav a {
   text-align: left;
   text-decoration: none;
   font-size: 25px;
   color: #99AAB5;
-  display: block;
+  padding: 10px, 20px, 40px, 100px;
+  display: inline-block;
 }
 .sidenav a:hover {
   color: #94FBAB;
@@ -82,10 +81,16 @@ a{
   font-size: 36px;
   margin-left: 50px;
 }
+
 .main {
   transition: margin-left .5s;
   padding: 16px;
 }
+
+#invisible {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
