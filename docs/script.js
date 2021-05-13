@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  showSlides(1);
-});
 
 function changeNav(){
   if (document.getElementById("mySidenav").style.width == "300px"){
@@ -27,6 +24,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

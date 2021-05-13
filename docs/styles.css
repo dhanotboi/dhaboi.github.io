@@ -204,7 +204,10 @@ p.invisible {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8A200F;
+  background: #aa3826;
+  position: relative;	
+  box-shadow: 1px 1px 13px 7px #6D706F;
+
 }
 
 /*Adjusted for small screens*/
