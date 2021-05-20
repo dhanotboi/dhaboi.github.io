@@ -2,6 +2,9 @@ body {
   background-color: #2C2F33;
   color: #FFFFFF;
 }
+.content{
+  padding-left:85px;
+}
 h1.header {
   color: #FFFFFF;
   font-family: 'Lucida Console', 'Courier New', monospace;

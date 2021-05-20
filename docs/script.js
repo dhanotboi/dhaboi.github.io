@@ -2,8 +2,10 @@
 function changeNav(){
   if (document.getElementById("mySidenav").style.width == "300px"){
     document.getElementById("mySidenav").style.width = "75px";
+    document.getElementById("content").style.margin = "10px 0px 0px 0px;";
   } else {
     document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("content").style.margin = "10px 0px 0px 0px;";
   }
   var invtext = document.getElementsByClassName("invisible");
   if (typeof(invtext.style.dispaly) != "undefined"){
