@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <header>
-    <!--linking-->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
-    <link href='styles.css' rel='stylesheet' type='text/css' />
-    <script src='script.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <!--Banner-->
-    <div class='jumbotron text-center' style='background-color:#23272A;'>
-      <h1 class ='header' style='color:#FFFFFF;'>My favourite languages</h1> <br>
-      <!--Side Navigation-->
-      <div class='sidenav' id='mySidenav'>
-        <a href='javascript:void(0)' class='closebtn' onclick='changeNav()'><i class='fa fa-angle-left'></i></a>
-        <a href='Dhanotboi.github.io' class='active'><div class='invisible' id='invisible'>Home</div></a>
-        <a href='Java.html'><img src='img/java.png' width='34' height='34'><div class='invisible' id='invisible'>Java</div></a>
-        <a href='Javascript.html'><img src='img/Javascript.png' width='34' height='34'><div class='invisible' id='invisible'>Javascript</div></a>
-        <a href='Python.html'><img src='img/python.png' width='34' height='34'><div class='invisible' id='invisible'>Python</div></a>
-        <a href='C#.html'><img src='img/CSharp.png' width='34' height='34'><div class='invisible' id='invisible'>C#</div></a>
-        <a href='Lua.html'><img src='img/lua.png' width='34' height='34'><div class='invisible' id='invisible'>Lua</div></a>
-        <a href='Html.html'><img src='img/html5.png' width='34' height='34'><div class='invisible' id='invisible'><strike>HTML5</strike></div></a>
+<header>
+  <!--linking-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
+    integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa'
+    crossorigin='anonymous'></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+  <link href='styles.css' rel='stylesheet' type='text/css' />
+  <script src='script.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <!--Banner-->
+  <div class='jumbotron text-center' style='background-color:#23272A;'>
+    <h1 class='header' style='color:#FFFFFF;'>My favourite languages</h1> <br>
+    <!--Side Navigation-->
+    <div class='sidenav' id='mySidenav'>
+      <a href='javascript:void(0)' class='closebtn' onclick='changeNav()'><i class='fa fa-angle-left'></i></a><br><br><br>
+      <a href='Dhanotboi.github.io' class='hover'>
+        <p>Home</p>
+      </a><br>
+      <a href='Java.html'><img src='img/java.png' width='34' height='34'>
+        <p class="invisible" id="invis">Java</p>
+      </a><br>
+      <a href='Javascript.html'><img src='img/Javascript.png' width='34' height='34'>
+        <p class="invisible" id="invis">Javascript</p>
+      </a><br>
+      <a href='Python.html'><img src='img/python.png' width='34' height='34'>
+        <p class="invisible" id="invis">Python</p>
+      </a><br>
+      <a href='C#.html'><img src='img/CSharp.png' width='34' height='34'>
+        <p class="invisible" id="invis">C#</p>
+      </a><br>
+      <a href='Lua.html'><img src='img/lua.png' width='34' height='34'>
+        <p class="invisible" id="invis">Lua</p>
+      </a><br>
+      <a href='Html.html'><img src='img/html5.png' width='34' height='34'>
+        <p class="invisible" id="invis"><strike>HTML5</strike></p>
+      </a><br>
+    </div>
+  </div>
+  <title>Dhanotboi</title>
+</header>
+
+<body onload:"currentSlide(1)">
+  <div class="content">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="slide" src="img/java.png" width='200' height='100'>
       </div>
+      <div class="mySlides fade">
+        <img class="slide" src="img/python.png" width='200' height='100'>
+      </div>
+      <div class="mySlides fade">
+        <img class="slide" src="img/lua.png" width='200' height='100'>
+      </div>
+      <div class="mySlides fade">
+        <img class="slide" src="img/Javascript.png" width='200' height='100'>
+      </div>
+      <div class="mySlides fade">
+        <img class="slide" src="img/html5.png" width='200' height='100'>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <title>Dhanotboi</title>
-  </header>
+    <br>
 
-  <body>
-    <!--Page Content-->
-    <div class='content'>
-
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-  </body>
+
+    <p>Starting coding is hard, not knowing what language to begin from, how it works and being able to move from a
+      beginner to an intermediate coder.</p>
+    <br>
+    <p>Hopefully this small guide will show you some of the languages you should start with and how you can start.</P>
+  </div>
+</body>
+
 </html>
