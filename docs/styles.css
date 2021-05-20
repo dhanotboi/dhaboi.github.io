@@ -56,7 +56,7 @@ a{
 }
 .sidenav {
   height: 100%;
-  width: 75px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   background-color: #23272A;
@@ -131,7 +131,7 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-img.slide {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;

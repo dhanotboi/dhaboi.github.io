@@ -2,19 +2,12 @@
 function changeNav(){
   if (document.getElementById("mySidenav").style.width == "300px"){
     document.getElementById("mySidenav").style.width = "85px";
+    document.getElementById("sidenavtext").style.display = "none";
     document.getElementById("content").style.margin = "95px 0px 0px 0px;";
   } else {
     document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("sidenavtext").style.display = "block";
     document.getElementById("content").style.margin = "310px 0px 0px 0px;";
-  }
-  var invtext = document.getElementsByClassName("invisible");
-  if (typeof(invtext.style.dispaly) != "undefined"){
-    invtext.style.display = "inline-block";
-  }
-  if (invtext.style.display == "none") {
-    invtext.style.display = "inline-block";
-  } else {
-    invtext.style.display = "none";
   }
 }
 
