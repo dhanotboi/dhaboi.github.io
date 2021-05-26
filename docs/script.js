@@ -1,39 +1,6 @@
-
-function changeNav(){
-  if (document.getElementById("mySidenav").style.width == "300px"){
-    document.getElementById("mySidenav").style.width = "85px";
-    document.getElementById("sidenavtext").style.display = "none";
-    document.getElementById("content").style.margin = "95px 0px 0px 0px;";
-  } else {
-    document.getElementById("mySidenav").style.width = "300px";
-    document.getElementById("sidenavtext").style.display = "block";
-    document.getElementById("content").style.margin = "310px 0px 0px 0px;";
-  }
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
 }
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
 }
