@@ -62,9 +62,8 @@
       <div id="card">
         <img src="img/Javascript.png" alt="Avatar" style="width: 100%">
         <div class="container">
-          <h4><b>John Doe</b></h4>
-          <div id="detail">
-          </div>
+          <h4><b>Javascript</b></h4>
+          <div id="detail"><p class="normal">Javascript is a powerful scripting language that is dynamically typed and is relatively fast.</p></div>
         </div>
       </div>
   </div>
@@ -83,21 +82,6 @@
     }
 
     setInterval(tick, 1000);
-
-    const empty = <p></p>;
-    var details = ["Javascript is a powerful scripting language that is dynamically typed and is relatively fast.", "", "BMW"];
-    var elements = document.getElementById('card');
-
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].addEventListener('mouseover', function (e) {
-        ReactDOM.render(detail[i], document.getElementById('detail'));
-      })
-
-      elements[i].addEventListener('mouseout', function (e) {
-        ReactDOM.render(empty, document.getElementById('detail'));
-      })
-    }
-
   </script>
 </body>
 
