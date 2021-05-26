@@ -6,7 +6,7 @@ function closeNav() {
 }
 for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('mouseover', function (e) {
-        document.getElementById('detail').style.display = "box";
+        document.getElementById('detail').style.display = "block";
     })
 
     elements[i].addEventListener('mouseout', function (e) {

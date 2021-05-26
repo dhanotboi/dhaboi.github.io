@@ -171,3 +171,6 @@ span:hover, span:focus {
   position: relative;	
   box-shadow: 1px 1px 13px 7px #6D706F;
 }
+#detail{
+  display: none;
+}
