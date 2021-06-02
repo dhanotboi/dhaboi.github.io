@@ -139,6 +139,9 @@ span.openNav{
 .cardcontainer{
   width: 200px;
 }
+a.text:hover + .detail{
+  display: inline;
+}
 #card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -148,6 +151,7 @@ span.openNav{
 #card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   width: 200px;
+  display: block;
 }
 .container {
   padding: 2px 16px;
@@ -173,6 +177,9 @@ span:hover, span:focus {
 .content{
   padding-left: 60px;
 }
+.small{
+  font-size: 40%;
+}
 /* CSS of scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -190,7 +197,4 @@ span:hover, span:focus {
   background: #aa3826;
   position: relative;	
   box-shadow: 1px 1px 13px 7px #6D706F;
-}
-#detail{
-  display: none;
 }
