@@ -198,3 +198,42 @@ span:hover, span:focus {
   position: relative;	
   box-shadow: 1px 1px 13px 7px #6D706F;
 }
+
+button {
+  background-color: #23272a;
+  color: hsl(260, 85%, 97%);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1.2rem;
+  border: 1px solid #23272a;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+button:hover {
+  animation-name: shine;
+  animation-duration: 300ms;
+}
+
+@keyframes shine {
+  0% {
+    background: linear-gradient(30deg, #2c2f33 0%, #23272a 25%);
+  }
+
+  25% {
+    background: linear-gradient(30deg, #23272a 0%, #2c2f33 25%, #23272a 50%);
+  }
+
+  50% {
+    background: linear-gradient(30deg, #23272a 0%, #2c2f33 50%, #23272a 75%);
+  }
+
+  75% {
+    background: linear-gradient(30deg, #23272a 0%, #2c2f33 75%, #23272a 100%);
+  }
+
+  100% {
+    background: linear-gradient(30deg, #23272a 0%, #2c2f33 100%);
+  }
+}
