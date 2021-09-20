@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- React Library imports -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Script.js import -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS library imports -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Font CSS library imports -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- Bootstrap CSS library imports -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Header -->
+  <div id="overlayer"></div>
+  <span class="loader">
+    <span class="loader-inner"></span>
+  </span>
+  <div class="sidenav">
+    <span class="openNav" style="font-size:30px;cursor:pointer;text-align:left;display:flex;"
+      onclick="openNav()">&#9776;</span>
+  </div>
+  <div class='jumbotron text-center' style='background-color:#23272A;'>
+    <h1 class='header' style='color:#FFFFFF;'>My Favourite Languages</h1> <br>
+    <div id="time"></div>
+  </div>
+  <title>Dhanotboi</title>
+
+</head>
+
+<body>
+  <!-- SideNav -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="javascript.html">Javascript (and HTML5)</a>
+      <a href="python.html">Python</a>
+      <a href="c's.html">C / C# / C++</a>
+      <a href="java.html">Java</a>
+      <a href="lua.html">Lua</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 class="header">My Top 5 Coding languages and some brief info on them.</h2> <br>
+    <p class="normal">Hello There!</p>
+    <p class="normal">Over time of finding out what languages I like and what fits me well, as well as learning it. I've
+      gained some begginer experience in several different languages that may help you as well. So in this website I'll
+      be going through my favourite ones and why I like them.</p>
+    <p class="normal">Click on the cards below to go to the page for the specific language below, or use the navigation
+      bar to the left</p>
+    <br>
+    <div class="cards">
+      <div class="cardcontainer">
+        <a href="javascript.html" class="text">
+          <div id="card">
+            <img src="img/Javascript.png" alt="Avatar" style="width: 100%">
+            <div class="container">
+              <h4><b>Javascript</b></h4>
+              <hr>
+              <div id="detail" class="detail">
+                <p class="small">A powerful scripting language that is dynamically typed and is relatively fast.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cardcontainer">
+        <a href="python.html" class="text">
+          <div id="card">
+            <img src="img/python.png" alt="Avatar" style="width: 100%">
+            <div class="container">
+              <h4><b>Python</b></h4>
+              <hr>
+              <div id="detail" class="detail">
+                <p class="small">An interpreted, object-oriented, high-level programming language with dynamic
+                  semantics.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cardcontainer">
+        <a href="c's.html" class="text">
+          <div id="card">
+            <img src="img/CSharp.png" alt="Avatar" style="width: 100%">
+            <div class="container">
+              <h4><b>C / C# / C++</b></h4>
+              <hr>
+              <div id="detail" class="detail">
+                <p class="small">C, one of the first and most revolutinary coding languages but it's also highly
+                  contreversial</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cardcontainer">
+        <a href="java.html" class="text">
+          <div id="card">
+            <img src="img/java.png" alt="Avatar" style="width: 100%">
+            <div class="container">
+              <h4><b>Java</b></h4>
+              <hr>
+              <p class="normal"></p>
+              <div id="detail" class="detail">
+                <p class="small">An object oriented programming language, that has its own platform.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cardcontainer">
+        <a href="lua.html" class="text">
+          <div id="card">
+            <img src="img/lua.png" alt="Avatar" style="width: 100%">
+            <div class="container">
+              <h4><b>Lua</b></h4>
+              <hr>
+              <div id="detail" class="detail">
+                <p class="small">A powerful, lightweight, embeddable scripting language. Based off of C it supports from
+                  Object oriented to data driven programming</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <br>
+    <!-- Joke please don't kill me -->
+    <h2 class="header">But, what do these words mean?</h2>
+    <p class="normal"> idk either </p>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/index.html" target="_blank" rel="noopener noreferrer">HTML for this page</a></button>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/script.js" target="_blank" rel="noopener noreferrer">JS for this page</a></button>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/styles.css" target="_blank" rel="noopener noreferrer">CSS for this page</a></button>
+    <br>
+  </div>
+
+  <!-- React.JS Code -->
+  <script type="text/babel">
+
+    //Updating time
+    function tick() {
+      const element = (
+        <div>
+          <p class="time">It is {new Date().toLocaleTimeString()}.</p>
+        </div>
+      );
+      ReactDOM.render(element, document.getElementById('time'));
+    }
+
+    setInterval(tick, 1000);
+  </script>
+</body>
+
+</html>

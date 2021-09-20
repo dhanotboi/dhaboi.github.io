@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- React Library imports -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Script.js import -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS library imports -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Font CSS library imports -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- Bootstrap CSS library imports -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Header -->
+  <div class='jumbotron text-center' style='background-color:#23272A;'>
+    <div class="sidenav">
+      <span class="openNav" style="font-size:30px;cursor:pointer;text-align:left;display:flex;" onclick="openNav()">&#9776;</span>
+    </div>
+    <h1 class='header' style='color:#FFFFFF;'>My Favourite Languages</h1> <br>
+    <div id="time"></div>
+  </div>
+  <title>Dhanotboi</title>
+</head>
+
+<body>
+  <!-- SideNav -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="javascript.html">Javascript (and HTML5)</a>
+      <a href="python.html">Python</a>
+      <a href="c's.html">C / C# / C++</a>
+      <a href="java.html">Java</a>
+      <a href="lua.html">Lua</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Header -->
+    <h2 class="header">Java <img src='img/java.png' width="10%" height="10%" style="padding-right: 20px"></h2>
+    <br>
+    <!-- Text -->
+    <p class="normal">Java, being one of my most used language along with C#, is also my faviorite langauge for what it can do and achieve.</p>
+    <p class="normal"><a href="https://www.java.com/en/">Java</a> is an OOP (object oriented programming language), and is great to use with game design or app building. Variations of java like kotlin or scala are used for app design and are used on billions of phones</p>
+    <p class="normal">As well as that Java is used for the most sold video game in the world, Minecraft. I started learning Java using a API for changing the way Minecraft behaves called CraftBukkit/SpigotMC. This got me really into Java and helped me learn the fundementals of programming.</p>
+    <p class="normal">However it is to be said that Java is "dying" and is not a good langauge to learn, and that is partially true. I would recommend not learning Java on its own but in pair with another tool to make it easier to learn. So how I said about the api that change Minecraft that would work as well as learning it throught Kotlin or Scala. If none of those appeals to you, you could also try game development with <a href="https://www.lwjgl.org/">LWGJL</a>(Light Weight Java Game Library).</p>
+    <p class="normal">Below is a video with a brief introduction of getting started with java as you need to download it as well</p>
+    <iframe width="90%" height="480" src="https://www.youtube.com/embed/Lfg8uVS6HVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/java.html" target="_blank" rel="noopener noreferrer">HTML for this page</a></button>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/script.js" target="_blank" rel="noopener noreferrer">JS for this page</a></button>
+    <button><a href="https://github.com/dhanotboi/dhanotboi.github.io/blob/main/docs/styles.css" target="_blank" rel="noopener noreferrer">CSS for this page</a></button>
+    <br>
+  </div>
+
+
+  <!-- React.JS Code -->
+  <script type="text/babel">
+
+    //Updating time
+    function tick() {
+      const element = (
+        <div>
+          <p class="time">It is {new Date().toLocaleTimeString()}.</p>
+        </div>
+        );
+      ReactDOM.render(element, document.getElementById('time'));
+    }
+
+    setInterval(tick, 1000);
+
+  </script>
+</body>
+</html>
